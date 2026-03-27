@@ -1,0 +1,7 @@
+if(CONFIG_ZMK_DISPLAY)
+    target_sources(app PRIVATE
+        custom_status_screen.c
+        frames/cat-frames.c
+    )
+    zephyr_include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+endif()
