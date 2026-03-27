@@ -11,8 +11,9 @@
         display-offset = <0>;
         multiplex-ratio = <31>;
         prechargep = <0x22>;
-        segment-remap;
-        com-invdir;
+        /* Probar SIN estas dos líneas primero: */
+        /* segment-remap; */
+        /* com-invdir; */
         com-sequential;
     };
 };
