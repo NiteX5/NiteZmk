@@ -1,0 +1,13 @@
+/*
+ * corne_right.overlay
+ *
+ * Extiende el shield oficial para incluir los 27 LEDs per-key
+ * además de los 6 de underglow (33 total por mitad).
+ *
+ * El shield corne oficial define el led_strip en spi3 con chain-length = 6.
+ * Aquí sobreescribimos solo ese valor; el resto (pin, driver, etc.) queda igual.
+ */
+
+&led_strip {
+    chain-length = <33>;
+};
